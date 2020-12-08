@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements realization, firs
         getSupportFragmentManager().beginTransaction().replace(R.id.contenedorActivity, fragmentFirst).commit();
     }
 
-
+// holis :3
     @Override
     public void reservarMesa() {
         Toast.makeText(getApplicationContext(),"Su solicitud de reserva de mesa aun sigue en espera",Toast.LENGTH_SHORT).show();

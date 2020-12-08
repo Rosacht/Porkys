@@ -15,15 +15,15 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="94dp"
         android:layout_marginEnd="146dp"
         android:layout_marginBottom="545dp"
         android:src="@mipmap/logo" />
 
     <TextView
-        android:id="@+id/text_usuario"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -31,14 +31,13 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginStart="84dp"
         android:layout_marginRight="4dp"
-        android:layout_marginBottom="641dp"
         android:text="Sin Nombre"
-        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/reserva"
@@ -48,23 +47,24 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+
         android:layout_marginStart="45dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="263dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="44dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="409dp" >
+        android:layout_marginBottom="409dp">
 
 
-            <ImageView
-                android:layout_width="42dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:src="@mipmap/logo" />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/logo" />
 
         <TextView
-            android:layout_width="289dp"
+            android:layout_width="216dp"
             android:layout_height="29dp"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="65dp"
@@ -76,9 +76,8 @@
 
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/cantidad"
+        android:id="@+id/terminosCondicion"
         android:layout_width="wrap_content"
         android:layout_height="44dp"
         android:layout_alignParentStart="true"
@@ -87,14 +86,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="245dp"
         android:layout_marginEnd="44dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="367dp"
-        app:cardElevation="6dp"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1">
-
+        android:layout_marginBottom="367dp" >
         <ImageView
             android:layout_width="42dp"
             android:layout_height="32dp"
@@ -110,9 +105,8 @@
             android:layout_marginTop="10dp"
             android:text="Terminos y condiciones"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
-
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -125,13 +119,11 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="364dp"
+        android:layout_marginTop="290dp"
         android:layout_marginEnd="44dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="318dp"
-        app:cardElevation="6dp"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1">
+        android:layout_marginBottom="318dp" >
+
 
         <ImageView
             android:layout_width="42dp"
@@ -153,6 +145,8 @@
 
     </androidx.cardview.widget.CardView>
 
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/ajustes"
         android:layout_width="wrap_content"
@@ -163,13 +157,11 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="413dp"
+        android:layout_marginTop="293dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="269dp"
-        app:cardElevation="6dp"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1">
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="269dp" >
+
 
         <ImageView
             android:layout_width="42dp"
@@ -186,7 +178,7 @@
             android:layout_marginTop="10dp"
             android:text="Ajustes"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
@@ -202,13 +194,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="458dp"
+        android:layout_marginTop="338dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="219dp"
-        app:cardElevation="6dp"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1">
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="219dp" >
 
         <ImageView
             android:layout_width="42dp"
@@ -225,10 +214,10 @@
             android:layout_marginTop="10dp"
             android:text="Sobre nosostros"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
-
     </androidx.cardview.widget.CardView>
+
 
 
 </FrameLayout>
