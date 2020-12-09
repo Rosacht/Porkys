@@ -29,6 +29,7 @@ public class firstFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
     View vista;
     Activity actividad;
     CardView cardReserva;
@@ -71,7 +72,7 @@ public class firstFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         vista=inflater.inflate(R.layout.fragment_first, container, false);
-        cardReserva=vista.findViewById(R.id.reserva);
+        cardReserva=vista.findViewById(R.id.cardReserva);
         cardReserva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

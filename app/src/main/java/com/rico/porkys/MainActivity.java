@@ -1,28 +1,31 @@
 package com.rico.porkys;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
+import androidx.cardview.widget.CardView;
+import android.view.View;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.widget.Button;
 
-import com.rico.porkys.central.firstFragment;
-import com.rico.porkys.interfaz.realization;
+import com.rico.porkys.central.Reservade;
+import com.rico.porkys.central.menuFragment;
 
-public class MainActivity extends AppCompatActivity implements realization, firstFragment.OnFragmentInteractionListener {
-    Fragment fragmentFirst;
-    //adioshola
+public class MainActivity extends AppCompatActivity  {
+    Button reservaMesas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fragmentFirst = new firstFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.contenedorActivity, fragmentFirst).commit();
+
+        reservaMesas=(Button)findViewById(R.id.button1);
+        reservaMesas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), menuFragment.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
-// holis :3
-    @Override
-    public void reservarMesa() {
-        Toast.makeText(getApplicationContext(),"Su solicitud de reserva de mesa aun sigue en espera",Toast.LENGTH_SHORT).show();
-    }
 }
