@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Porkys">
-        <activity android:name=".central.Reservade"></activity>
+        <activity android:name=".central.info"></activity>
+        <activity android:name=".central.ajustes" />
+        <activity android:name=".central.comentarios" />
+        <activity android:name=".central.Terminos" />
+        <activity android:name=".central.Reservade" />
         <activity android:name=".central.menuFragment" />
         <activity android:name=".activity.LogActivity">
             <intent-filter>
